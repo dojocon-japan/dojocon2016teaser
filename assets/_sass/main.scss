@@ -279,6 +279,21 @@ main {
 			margin: auto;
 		}
 	}
+
+	.section-subtitle {
+		text-align: center;
+		color: $dark-font-color;
+		font-family: $roboto;
+		font-size: rem(20);
+		font-weight: 700;
+		padding-bottom: 5px;
+		position: relative;
+		z-index: 9;
+
+		@include media(min-width $s-screen) {
+			font-size: rem(24);
+		}
+	}
 }
 
 .section-about {
@@ -419,6 +434,43 @@ main {
 			}
 		}
 	}
+}
+
+.section-banner {
+	@include outer-container;
+	margin-top: $gutter;
+	margin-bottom: $gutter;
+	@include pad(0 15px);
+
+	.banner_widget {
+		@include outer-container;
+		margin-top: $gutter;
+		@include pad(0 15px);
+		text-align: center;
+
+		> li {
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+			margin-bottom: $gutter;
+
+		}
+		.banner_amimoto{
+			padding-top: 10px;
+			padding-bottom: 30px;
+			width: 90%;
+			@include media(min-width $xxs-screen) {
+				width: 600px;
+			}
+		}
+		.banner_r3{
+			width: 30%;
+			@include media(min-width $xxs-screen) {
+				width: 200px;
+			}
+		}
+	}
+
 }
 
 .section-sponsor-form:first-child,
