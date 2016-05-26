@@ -457,10 +457,19 @@ main {
 		}
 		.banner_amimoto{
 			padding-top: 10px;
+			padding-right: 2%;
 			padding-bottom: 30px;
 			width: 90%;
 			@include media(min-width $xxs-screen) {
 				width: 600px;
+			}
+		}
+		.banner_mitou{
+			padding-top: 10px;
+			padding-bottom: 30px;
+			width: 65%;
+			@include media(min-width $xxs-screen) {
+				width: 350px;
 			}
 		}
 		.banner_r3{
