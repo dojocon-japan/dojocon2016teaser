@@ -487,8 +487,20 @@ main {
 				}
 			}
 		}
+		.banner_tam{
+			img{
+				padding-top: 10px;
+				padding-bottom: 20px;
+				width: 30%;
+				@include media(min-width $xxs-screen) {
+					width: 245px;
+				}
+			}
+		}
 		.banner_r3{
 			img{
+				padding-top: 10px;
+				padding-bottom: 20px;
 				width: 30%;
 				@include media(min-width $xxs-screen) {
 					width: 200px;
