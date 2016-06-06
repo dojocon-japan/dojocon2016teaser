@@ -439,7 +439,6 @@ main {
 .section-banner {
 	@include outer-container;
 	margin-top: $gutter;
-	margin-bottom: $gutter;
 	@include pad(0 15px);
 
 	.banner_widget {
@@ -491,7 +490,7 @@ main {
 			img{
 				padding-top: 10px;
 				padding-bottom: 20px;
-				width: 30%;
+				width: 38%;
 				@include media(min-width $xxs-screen) {
 					width: 245px;
 				}
