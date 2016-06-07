@@ -486,6 +486,16 @@ main {
 				}
 			}
 		}
+		.banner_kobe{
+			padding-top: 15px;
+			padding-bottom: 30px;
+			img{
+				width: 60%;
+				@include media(min-width $xxs-screen) {
+					width: 300px;
+				}
+			}
+		}
 		.banner_tam{
 			img{
 				padding-top: 10px;
