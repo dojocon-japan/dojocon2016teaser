@@ -516,6 +516,16 @@ main {
 				}
 			}
 		}
+		.banner_cafigla{
+			img{
+				padding-top: 10px;
+				padding-bottom: 20px;
+				width: 36%;
+				@include media(min-width $xxs-screen) {
+					width: 235px;
+				}
+			}
+		}
 	}
 
 }
