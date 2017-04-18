@@ -198,3 +198,10 @@ gulp.task('watch', ['watchify'], function () {
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 gulp.task('default', tasks);
+
+var deploy = require("gulp-gh-pages");
+
+gulp.task("deploy", ["jekyll-build"], function () {
+  return gulp.src("./_site/**/*")
+    .pipe(deploy());
+});
